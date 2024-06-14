@@ -81,7 +81,7 @@
                 <version>2.2</version>
                 <configuration>
                     <url>http://localhost:8080/manager/text/</url>
-                    <path>/hmgWebapp</path>
+                    <path>/</path>
                     <username>rmsoft</username>
                     <password>rmsoft</password>
                 </configuration>
