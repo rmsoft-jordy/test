@@ -15,8 +15,9 @@ RUN apt-get -y install openjdk-8-jdk wget
 
 # Tomcat을 설치하고 디렉토리 설정
 RUN mkdir /usr/local/tomcat
+WORKDIR /tmp
 RUN wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.90/bin/apache-tomcat-9.0.90.tar.gz
-RUN cd /tmp && tar xvfz tomcat.tar.gz
+RUN tar xvfz apache-tomcat-9.0.90.tar.gz
 RUN cp -Rv /tmp/apache-tomcat-9.0.90/* /usr/local/tomcat/
 
 # 임시 디렉토리 및 웹 애플리케이션 삭제
